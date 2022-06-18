@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confession</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+        <!-----------------landing page----------------->
+        
+        <div class="hero">
+
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="videowhale.mp4" type="video/mp4">
+            </video>
+
+
+            <!---------admin login modal pop up-------------->
+            <div class="bg-modal-admin">
+                <div class="admin-modal-content">
+                    <div class="close-admin-login">+</div>
+                    <img src="profilepic.jpg" alt="">
+                    <form action="">
+                        <input type="text" placeholder="Username" class="text">
+                        <input type="password" placeholder="Password" class="text">
+                        <button class="btnLogin">Login</button>
+                        
+                    </form>
+                </div>
+            </div>
+
+            <!--navigation bar-->
+            <nav>
+                <img src = "whale.png" class="logo">
+                <ul>
+                    <li><a href="#home" id="home">HOME</a></li>
+                    <li><a href="#confess" id="confess">CONFESS</a></li>
+                    <li><a href="#admin" id="admin">ADMIN LOGIN</a></li>
+                </ul>
+            </nav>
+
+            <!--header and button for Confess-->
+            <div class="content">
+                <h1>I Whale Confess</h1>
+                <a href="#" id="btnConfess" class="btnConfess" >Confess</a>
+            </div>
+
+            <!--------confess pop up modal----------->
+            <div class="bg-modal">
+                <div class="modal-content">
+                    <div class="close">+</div>
+                    <div id="iWhaleConfess">I Whale Confess</div>
+                    
+                    <div>
+                        <form >
+                            <textarea placeholder="Reply Id" id="replyIdtxt"></textarea>
+                        </form>
+                    </div>
+
+                    <div>
+                        <form >
+                            <textarea placeholder="I want to confess..." id="confesstxt"></textarea>
+                        </form>
+                    </div>
+          
+                    <div class="preview">
+                        <img id="file-ip-1-preview">
+                        <!-- <label for="file-ip-1">Upload Image</label> --> 
+                    </div>
+
+                    <div class="chooseFile">
+                        <label for="file-upload" class="custom-file-upload">
+                            Upload image
+                        </label>
+                        <input type="file" id="file-upload"  placeholder="Choose image"  accept="image/*" onchange="showPreview(event);">
+                    </div>
+
+                    <div class="center">
+                        <button class="btnSubmit">
+                            Submit Confession
+                        </button>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <!--------------end oflanding page----------------->
+
+
+
+        <!--------------user page----------------->
+
+
+
+        <div class="userpage">
+            
+            <div class="search">
+                <form action="" class="search-bar">
+                    <input type="text" placeholder="Search anything" name='q'>
+                    <!-- <button type="submit"><img src="search.png"></button> -->
+                </form>
+            </div>
+            <!-- <img src="whitewhale.png" type="image/png"> -->
+            <div class="posted-1">
+                <p>Lorem ipsum</p>
+            </div>
+            <div class="posted-2">
+                <p>Lorem </p>
+            </div>
+            <div class="posted-3">
+                <p>Lorem ipsum</p>
+            </div>
+        </div>
+        
+        
+
+</body>
+
+
+
+</html>
